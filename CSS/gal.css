@@ -1,0 +1,192 @@
+/*Iniciando con los estilos de la view de galería*/
+
+.imgserv-gal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(25deg, rgba(0, 0, 0, 0.658), rgba(21, 93, 228, 0.7)), url(../Media/canc.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.5));
+}
+.txt__gal h2{
+    color: #fff;
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    padding: 100px;
+}
+/*Diseño de la galería con CSS grid*/
+.order__grid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-gal{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    width: 80%;
+    height: 90vh;
+    justify-content: center;
+    margin-top: 40px;
+}
+.caja{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+.aref{
+    width: 100%;
+    transition: 300ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aref:hover{
+    background-color: rgba(170, 166, 166, 0.6);
+}
+.a a{
+    color: #fff;
+    transition: 300ms;
+}
+.a a:hover{
+    color: black;
+}
+
+/*Estableciendo los estilos de cada una de las cajas :v*/
+
+
+.c1{
+    background-image: url(../Media/galeria_raver06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.c2{
+    background-image: url(../Media/galeria_raver05.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.5));
+}
+.c3{
+    background-image: url(../Media/galeria_raver04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.c4{
+    background-image: url(../Media/galeria_raver03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.5));
+}
+.c5{
+    background-image: url(../Media/galeria_raver02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.c6{
+    background-image: url(../Media/galeria_raver01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.5));
+}
+
+/*CSS para el grid de los documentos v:*/
+
+.grid__doc{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 40px;
+    width: 90%;
+    height: 30vh;
+    justify-content: center;
+}
+.doc{
+    display: flex;
+    align-items: center;
+    background-color: rgb(228, 228, 228);
+    margin: 3px;
+}
+.txt-doc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+.iconPdf{
+    color: blue;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.txtPdf h2{
+    color: orangered;
+    font-size: 25px;
+}
+.txtPdf{
+    padding: 15px;
+}
+.txtPdf a{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 300ms;
+}
+.txtPdf a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+
+/*Comenzando con el responsive de la view :v*/
+
+@media(max-width: 1024px){
+    .grid__doc{
+        grid-template-columns: 40% 40%;
+        width: 100%;
+    }
+    .txtPdf h2{
+        font-size: 18px;
+    }
+    .txtPdf a{
+        font-size: 13px;
+    }
+    .grid-gal{
+        grid-template-columns: 40% 40%;
+    }
+    .txt__gal h2{
+        font-size: 45px;
+    }
+}
+@media(max-width: 920px){
+    .grid__doc{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-bottom: 45px;
+        margin-top: 65px;
+    }
+    .grid-gal{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+    }
+    .txtPdf h2{
+        font-size: 15px;
+    }
+    .txtPdf a{
+        font-size: 10px;
+    }
+    .txt__gal h2{
+        font-size: 40px;
+    }
+}

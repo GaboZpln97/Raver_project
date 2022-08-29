@@ -1,0 +1,280 @@
+/*Iniciando con los estilos del main en Servicios*/
+
+.cover-2{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imgserv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(25deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7)), url(../Media/mant.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(-40px 0px 30px rgba(0,0,0,0.5));
+}
+.txt__mant h2{
+    color: #fff;
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    padding: 100px;
+}
+.txt__mant-exp{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(25deg, rgba(151, 146, 146, 0.7), rgba(1, 164, 240, 0.7));
+    filter: drop-shadow(-40px 0px 30px rgba(0,0,0,0.5));
+}
+.content_mant h2{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+    padding: 40px;
+    opacity: 0.8;
+}
+.content_mant p{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+/*Estableciendo los estilos de las listas  :v */
+
+.listMant{
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    background: linear-gradient(25deg, rgba(151, 146, 146, 0.7), rgba(1, 164, 240, 0.7));
+    filter: drop-shadow(-40px 0px 30px rgba(0,0,0,0.5));
+}
+.listMant-1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 150px;
+}
+.listMant-2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 150px;
+}
+.listMant-1 ul li{
+    color: #fff;
+    opacity: 0.8;
+    font-size: 18px;
+    list-style: circle;
+    padding-top: 10px;
+}
+.listMant-2 ul li{
+    color: #fff;
+    opacity: 0.8;
+    font-size: 18px;
+    list-style: circle;
+    padding-top: 10px;
+}
+
+/*Estilo para la foto*/
+
+.foto__container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#foto{
+    filter: drop-shadow(-40px 0px 30px rgba(0,0,0,0.5));
+}
+
+
+.imgcalib{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(25deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7)), url(../Media/imgcalib.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(-40px 0px 30px rgba(0,0,0,0.5));  
+}
+.txt__calib h2{
+    color: #fff;
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    padding: 100px;
+}
+
+.listCalib{
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    background: linear-gradient(25deg, rgba(151, 146, 146, 0.7), rgba(1, 164, 240, 0.7));
+    filter: drop-shadow(-40px 0px 30px rgba(0,0,0,0.5));
+}
+.lis1__container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+}
+.lis2__container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+}
+.listCalib-1 ul li{
+    color: #fff;
+    opacity: 0.8;
+    font-size: 16px;
+    list-style: circle;
+    padding-top: 10px;
+}
+.listCalib-1{
+    margin-top: 8px;
+}
+.listCalib-2{
+    margin-top: 8px;
+}
+.listCalib-2 ul li{
+    color: #fff;
+    opacity: 0.8;
+    font-size: 16px;
+    list-style: circle;
+    padding-top: 10px;
+}
+.txtLibCalib-1{
+    color: #fff;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.txt__calib-exp{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(25deg, rgba(151, 146, 146, 0.7), rgba(1, 164, 240, 0.7));
+    filter: drop-shadow(-40px 0px 30px rgba(0,0,0,0.5));
+}
+.txtLibCalib-2{
+    color: #fff;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.content_calib h2{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+    padding: 40px;
+    opacity: 0.8;
+}
+
+/*Conenzando con los estilos para hacer responsive la página*/
+
+@media(max-width:1024px){
+    .txt__mant h2{
+        font-size: 35px;
+    }
+    .content_mant h2{
+        font-size: 20px;
+    }
+    .content_mant p{
+        font-size: 16px;
+    }
+    .listMant-1 ul li{
+        font-size: 15px;
+    }
+    .listMant-2 ul li{
+        font-size: 15px;
+    }
+    #foto{
+        width: 380px;
+    }
+    .txt__calib h2{
+        font-size: 35px; 
+    }
+    .listCalib-1 ul li{
+        font-size: 15px;
+    }
+    .listCalib-2 ul li{
+        font-size: 15px;
+    }
+    .txtLibCalib-1{
+        font-size: 17px;
+    }
+    .txtLibCalib-2{
+        font-size: 17px;
+    }
+    .content_calib h2{
+        font-size: 20px;
+    }
+}
+@media(max-width: 920px){
+    #foto{
+       width: 350px; 
+    }
+    .listCalib{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .listMant-1{
+        padding-left: 0px;
+    }
+    .listMant-2{
+        padding-right: 0px;
+    }
+    .listMant{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .lis1__container{
+        padding-left: 0px;
+    }
+    .lis2__container{
+        padding-right: 0px;
+    }
+    .txt__calib h2{
+        font-size: 35px; 
+    }
+    .listCalib-1 ul li{
+        font-size: 15px;
+    }
+    .listCalib-2 ul li{
+        font-size: 15px;
+    }
+    .txtLibCalib-1{
+        font-size: 17px;
+    }
+    .txtLibCalib-2{
+        font-size: 17px;
+    }
+    .content_calib h2{
+        font-size: 15px;
+    }
+}

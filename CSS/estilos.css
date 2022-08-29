@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2? family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+   background-image: linear-gradient(35deg, rgba(0, 0, 0, 0.8), rgba(27, 78, 219, 0.8), rgba(32, 218, 193, 0.8)), url(../Media/fondo.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+ header{
+   height: 100px; 
+ }
+ .container__header{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding: 40px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .logo img{
+    width: 180px;
+ }
+ .menu nav ul{
+    display: flex;
+ }
+ .menu nav ul li{
+    list-style: none;
+    padding: 0px 20px;
+ }
+ .menu nav ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    transition: 300ms;
+ }
+ .menu nav ul li a:hover{
+    color: rgba(255, 255, 255, 0.699);
+ }
+ .btn__header-register{
+    padding: 14px 50px;
+    border: none;
+    background: black;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background, color, 300ms;
+ }
+ .btn__header-register:hover{
+    background-color: #69f1a1;
+    color: #000;
+ }
+ #icon_menu{
+   display: none;
+ }
+
+ /*Portada-Cover*/
+
+ main{
+    max-width: 1200px;
+    height: auto;
+    padding: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .cover{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+ }
+ .text__nosotros-cover{
+   width: 50%;
+ }
+ .text__nosotros-cover h1{
+   font-size: 50px;
+   color: #fff;
+ }
+ .text__nosotros-cover p{
+   font-size: 18px;
+   margin-top: 40px;
+   color: #fff;
+ }
+
+.buttons__cover{
+   display: flex;
+   margin-top: 40px;
+}
+.btn__readMore-cover{
+   text-decoration: none;
+   background-color: #fff;
+   padding: 14px 40px;
+   border: none;
+   color: black;
+   font-weight: 200;
+   font-size: 16px;
+   cursor: pointer;
+   margin-left: 10px;
+   transition: background, 300ms;
+}
+.btn__readMore-cover:hover{
+   background: #000000;
+   color: #fff;
+}
+
+ .media__cover{
+   width: 60%;
+ }
+ .media__cover img.img1{
+   width: 100%;
+   margin-top: 5px;
+   filter: drop-shadow(-40px 0px 30px rgba(0,0,0,0.5));
+ }
+
+ /*Banner*/
+
+ .container__banner{
+   margin-top: 80px;
+ }
+ .banner{
+   height: 250px;
+   display: flex;
+   align-items: center;
+   background: linear-gradient(25deg, rgba(24, 50, 197, 0.8), rgba(167, 53, 202, 0.562), rgba(0, 0, 0, 0.8));
+   position: relative;
+ }
+
+ .banner__icon{
+   width: 35%;
+   height: 100%;
+ }
+ #icon_logo{
+   width: 330px;
+   margin-top: 30px;
+   position: relative;
+   filter: drop-shadow(-40px 0px 30px rgba(0,0,0,0.5));
+ }
+.banner__text{
+   width: 60%;
+   position: relative;
+   padding: 40px;
+}
+.banner__text h2{
+   color: #fff;
+   font-size: 18px;
+   font-weight: 400;
+}
+.banner__iconlogo{
+   height: 100%;
+   position: absolute;
+   right: 10px;
+   overflow: hidden;
+}
+#icon_lb{
+   width: 300px;
+   position: relative;
+   margin-top: -40px;
+   opacity: 0.6;
+}
+div ul.mision{
+   list-style: none;
+}
+div ul.mision li{
+   font-size: 20px;
+   margin: 20px;
+   font-weight: 600;
+   color: #fff;
+}
+@media (max-width: 1024px){
+   .container__header,
+   main{
+      padding: 20px;
+   }
+
+   #icon_menu{
+      display: block;
+      cursor: pointer;
+      font-size: 24px;
+   }
+   .header__register{
+      display: none;
+   }
+   .menu{
+      height: 0px;
+      position: absolute;
+      right: 20px;
+      top: 70px;
+      overflow: hidden;
+      z-index: 10;
+      box-shadow: 0px 0px 30ox -20px rgba(0, 0, 0, 0.8);
+      transition: all 300ms;
+   }
+   .menu nav ul{
+      padding: 20px 0px;
+      flex-direction: column;
+      background: rgba(128, 128, 128, 0.692);
+   }
+   .menu nav ul li{
+      padding: 10px 40px;
+   }
+   .mostrar_menu{   /*Clase manipulada por js*/
+      height: 350px;
+
+   }
+   .text__nosotros-cover h1{
+      font-size: 20px;
+   }
+   .text__nosotros-cover p{
+      font-size: 15px;
+   }
+   .banner__text h2{
+      font-size: 15px;
+   }
+   div ul.mision li{
+      font-size: 15px;
+   }
+   #icon_logo{
+      left: -30px;
+   }
+   .banner__icon-logo{
+      right: -20px;
+   }
+}
+@media (max-width: 920px){
+   .text__nosotros-cover{
+      width: 80%;
+   }
+   .media__cover{
+      display: none;
+   }
+   .banner{
+      height: auto;
+      flex-wrap: wrap;
+   }
+   #icon_lb{
+      display: none;
+   }
+   #icon_logo{
+      left: 0px;
+   }
+   .banner__text{
+      width: 100%;
+      margin-top: -30px;
+   }
+}
+
+/*Inicio de estilos en view de "Nosotros"*/
+.img__nosotros-img{
+   width: 100%;
+   filter: drop-shadow(-40px 0px 30px rgba(0,0,0,0.5));
+}
+.txt__explicacion{
+   margin: 30px;
+   margin-top: 50px;
+}
+
+.txt__explicacion h1{
+   font-size: 40px;
+   color: #fff;
+}
+.txt__explicacion p{
+   font-size: 18px;
+   margin-top: 50px;
+   color: #fff;
+}
+.mision__container{
+ display: flex;
+ justify-content: center;
+ margin-top: 90px;
+ background-color: rgba(28, 161, 202, 0.705);
+ filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.9));
+}
+.mision h1{
+   text-align: center;
+   font-size: 30px;
+   color: #fff;
+   filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.9));
+}
+.mision p{
+   font-size: 18px;
+   margin-top: 40px;
+   color: #fff;
+   text-align: center;
+   filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.9));
+}
+.mision{
+   padding: 25px;
+   width: 70%;
+}
+.sep{
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+   background-image: linear-gradient(25deg, rgba(37, 36, 36, 0.705), rgba(105, 21, 184, 0.733)), url(../Media/div1.jpg);
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   width: 100%;
+   height: 200px;
+   filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.9));
+}
+.vision__container{
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+   background-color: rgba(28, 161, 202, 0.705);
+   filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.9));
+  }
+.vision h1{
+   text-align: center;
+   font-size: 30px;
+   color: #fff;
+   filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.9));
+}
+.vision p{
+   font-size: 18px;
+   margin-top: 40px;
+   color: #fff;
+   text-align: center;
+   filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.9));
+}
+.vision{
+   padding: 25px;
+   width: 70%;
+}
+.sep-2{
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+   background-image: linear-gradient(25deg, rgba(235, 41, 27, 0.705), rgba(207, 228, 17, 0.733)), url(../Media/div2.jpg);
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   width: 100%;
+   height: 200px; 
+   filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.9));
+}
+.politica__container{
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background-color: rgba(28, 161, 202, 0.705);
+   filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.9));
+}
+.politica h1{
+   text-align: center;
+   font-size: 30px;
+   color: #fff;
+   filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.9));  
+}
+.politica p{
+   font-size: 18px;
+   margin-top: 40px;
+   color: #fff;
+   text-align: center;
+   filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.9));
+}
+.politica{
+   padding: 25px;
+   width: 70%;
+}
+
+/*Footer*/
+
+footer{
+   height: auto;
+}
+.container__footer{
+   max-width: 1120px;
+   height: 100%;
+   margin: auto;
+   padding: 40px;
+   padding-top: 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-image: linear-gradient(25deg, rgba(0, 0, 0, 0.8), rgba(7, 33, 180, 0.8)), url(../Media/fondoft.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.oficinas h2{
+   color: rgb(231, 54, 0);
+   font-weight: 600;
+   font-size: 20px;
+   text-align: center;
+   padding: 3px;
+}
+.oficinas p{
+   color: #fff;
+   font-size: 18px;
+   text-align: center;
+   padding-top: 10px;
+}
+.oficinas{
+   padding: 10px;
+}
+.telefonos h2{
+   color: rgb(231, 54, 0);
+   font-weight: 600;
+   font-size: 20px;
+   text-align: center;
+   padding: 3px;
+}
+.telefonos p{
+   color: #fff;
+   font-size: 18px;
+   text-align: center;
+   padding-top:10px;
+}
+.telefonos{
+   padding: 10px;
+}
+.siguenos h2{
+   color: rgb(231, 54, 0);
+   font-weight: 600;
+   font-size: 20px;
+   text-align: center;
+   padding: 3px;
+}
+.siguenos a{
+   color: #fff;
+   padding-top: 15px;
+   transition: 300ms;
+}
+.siguenos a:hover{
+   opacity: 0.8;
+}
+.siguenos{
+   padding: 10px;
+}
+.container__footer-sa{
+   display: flex;
+   justify-content: center;
+}
+.textft p{
+   color: #fff;
+   font-size: 18px;
+   text-align: center;
+   padding-top:10px;
+}
+.textft a{
+   display: block;
+   text-decoration: none;
+   color: #fff;
+   font-size: 18px;
+   text-align: center;
+   padding-top:10px;
+   transition: 300ms;
+}
+.textft a:hover{
+   opacity: 0.8;
+}
+.textft{
+   width: 1120px;
+   height: auto;
+   background-image: linear-gradient(25deg, rgba(0, 0, 0, 0.8), rgba(7, 33, 180, 0.8)), url(../Media/fondoft.jpg);
+   margin-top: 3px;
+   margin-bottom: 10px;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+/*Modificaciones para responsive de esta view*/
+
+@media (max-width: 1024px){
+   .txt__explicacion h1{
+      font-size: 20px;
+   }
+   .txt__explicacion p{
+      font-size: 16px;
+   }
+   .txt__explicacion{
+      margin-left: 0px;
+   }
+   #cela{
+      width: 80%;
+   }
+   .vision h1{
+      font-size: 20px;
+   }
+   .vision p{
+      font-size: 16px;
+   }
+   .mision h1{
+      font-size: 20px;
+   }
+   .mision p{
+      font-size: 16px;
+   }
+   .politica h1{
+      font-size: 20px;
+   }
+   .politica p{
+      font-size: 16px;
+   }
+   .oficinas h2{
+      font-size: 20px;
+   }
+   .oficinas p{
+      font-size: 16px;
+      padding: 5px;
+   }
+   .telefonos h2{
+      font-size: 20px;
+   }
+   .telefonos p{
+      font-size: 16px;
+   }
+   .siguenos h2{
+      font-size: 20px;
+   }
+   .siguenos a{
+      font-size: 16px;
+   }
+   .textft a{
+      font-size: 16px;
+   }
+   .textft p{
+      font-size: 16px;
+   }
+}
+@media(max-width: 920px){
+   #cela{
+      display: none;
+   }
+   .txt__explicacion{
+      width: 70%;
+   }
+   .container__footer{
+      flex-wrap: wrap;
+      flex-direction: column;
+   }
+}

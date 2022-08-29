@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+main{
+    max-width: 1400px;
+    height: auto;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.cover{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+}
+.title h1{
+   color: rgba(128, 128, 128, 0.829); 
+   font-size: 40px;
+   text-align: center; 
+   padding-left: 50px;
+   font-weight: 600;
+}
+.title{
+    width: 100%;
+}
+.txt{
+    width: 100%;
+    text-align: justify;
+}
+.txt p{
+    color: rgba(128, 128, 128, 0.753);
+    padding: 35px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.subTxt{
+    width: 100%;
+    text-align: left;
+    font-weight: 400;
+}
+.subTxt h2{
+    color: rgb(0, 0, 158);
+    font-size: 16px;
+    padding-left: 30px;
+}
+.txt a{
+    text-decoration: none;
+    color: blue;
+}
+.list {
+    padding-left: 55px;
+}
+.list ul li{
+    color: rgba(128, 128, 128, 0.753);
+    padding: 5px;
+}
+.princPag{
+    margin-top: 40px;
+    justify-content: center;
+    text-align: center;
+}
+.bttn{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    padding: 15px;
+    background-color: black;
+    transition: 300ms;
+}
+.bttn:hover{
+    background-color: lightgreen;
+    color: black;
+}

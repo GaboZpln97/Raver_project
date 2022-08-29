@@ -1,0 +1,153 @@
+/*Iniciando los estilos de la view "Contacto" v:*/
+
+.imgContact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: /*linear-gradient(25deg, rgba(0, 0, 0, 0.5), rgba(245, 245, 245, 0.5)),*/ url(../Media/fachada.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.5));
+}
+.txt__contact h2{
+    color: #fff;
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    padding: 100px;
+}
+
+/*Realizando los estilos para la parte del formulario xd*/
+
+.form__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.grid-form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+.In__3{
+    grid-column: 1/3;
+}
+.In__4{
+    grid-column: 1/3;
+}
+.inputs{
+    padding: 10px;
+    border: 0.5px rgb(180, 11, 202) solid;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.in-3{
+    width: 100%;
+}
+.in-4{
+    width: 100%;
+    height: 250px;
+}
+.bttn{
+    margin-top: 3px;
+    width: 100%;
+    height: 40px;
+    margin-left: 0px;
+    background-color: rgb(252, 93, 35);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 300ms;
+}
+.bttn:hover{
+    color: black;
+    background-color: rgb(27, 226, 226);
+}
+
+/*Estilo de números y correo xd*/
+
+.referencias{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.txt__contacto{
+    padding: 20px;
+    padding-right: 450px;
+}
+.txt__contacto h2{
+    color: orangered;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+}
+.txt__contacto p{
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+.telef{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px whitesmoke solid
+}
+.txt__telef h2{
+    padding: 60px;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+.txt__telef h2 a{
+    color: orangered;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*Estilos responsive de view xd*/
+
+@media(max-width:1024px){
+    .txt__telef h2{
+        font-size: 20px;
+    }
+    .txt__contact h2{
+        font-size: 35px;
+    }
+    .txt__contacto{
+        padding: 20px;
+        padding-right: 200px;
+    }
+    .txt__contacto h2{
+        font-size: 20px;
+    }
+    .txt__contacto p{
+        font-size: 15px;
+    }
+}
+@media(max-width:920px){
+    .referencias{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .txt__contacto{
+        padding-right: 0px;
+    }
+}
